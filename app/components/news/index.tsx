@@ -51,7 +51,7 @@ function News({ news, coins }: { news: New[]; coins: Coin[] }) {
                         maxHeight: "100px",
                         borderRadius: "20px",
                       }}
-                      src={cryptoNews.image.thumbnail.contentUrl || demoImage}
+                      src={cryptoNews.image.thumbnail?.contentUrl || demoImage}
                       alt={cryptoNews.name}
                     />
                   </div>
@@ -64,7 +64,7 @@ function News({ news, coins }: { news: New[]; coins: Coin[] }) {
                     <div>
                       <Avatar
                         src={
-                          cryptoNews.provider[0].image.thumbnail.contentUrl ||
+                          cryptoNews.provider[0].image.thumbnail?.contentUrl ||
                           demoImage
                         }
                         alt={cryptoNews.provider[0].name}
