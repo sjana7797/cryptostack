@@ -29,7 +29,7 @@ export interface Stats {
   total24hVolume: number;
 }
 interface Image {
-  thumbnail: { contentUrl: string; height?: number; width?: number };
+  thumbnail?: { contentUrl: string; height?: number; width?: number };
 }
 
 export interface New {
